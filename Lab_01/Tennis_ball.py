@@ -87,4 +87,13 @@ def main():
     # Display the plot
     plt.show()
 
+    # Q5 for 95% confidence interval
+    z = 1.96  # z-value for 95% confidence interval
+    rebound_height_ci = mean - z*stddev, mean + z*stddev
+    print("95% Confidence Interval for Rebound Height:", rebound_height_ci)
+
+    # Q5 for 95% confidence interval for coefficient of restitution
+    e_ci = coeff_of_restitution - z*estddev, coeff_of_restitution + z*estddev
+    print("95% Confidence Interval for Coefficient of Restitution:", e_ci)
+
 main()
